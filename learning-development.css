@@ -1,0 +1,1780 @@
+/* ============================================
+   PAGE HEADER SECTION
+============================================ */
+.page-header-section {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    background-image: url('images/ld-header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 60px;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 55, 124, 0.88);
+    z-index: 1;
+}
+
+.page-header-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb-item a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--white);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--white);
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   SERVICE OVERVIEW SECTION
+============================================ */
+.service-overview-section {
+    background: var(--white);
+}
+
+.service-description {
+    color: var(--dark-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.trust-badge-box {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.trust-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.trust-icon i {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.trust-content h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.trust-content p {
+    margin: 0;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
+.service-image-wrapper {
+    position: relative;
+}
+
+.floating-stat-card {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.floating-stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.floating-stat-card p {
+    color: var(--dark-gray);
+    margin: 0;
+    font-weight: 600;
+}
+
+/* ============================================
+   SERVICE OFFERINGS CARDS
+============================================ */
+.service-offerings-section {
+    background: var(--light-gray);
+}
+
+.service-offering-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.service-offering-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--gold);
+}
+
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.service-offering-card:hover .service-icon-wrapper {
+    background: var(--gold);
+    transform: rotate(360deg);
+}
+
+.service-icon-wrapper i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.service-card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.service-card-text {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.service-features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features-list li {
+    padding: 0.5rem 0;
+    color: var(--black);
+    font-size: 0.95rem;
+}
+
+.service-features-list i {
+    color: var(--green);
+    margin-right: 10px;
+}
+
+/* ============================================
+   TECHNOLOGY DOMAIN CARDS
+============================================ */
+.tech-training-section {
+    background: var(--white);
+}
+
+.tech-domain-card {
+    background: var(--light-gray);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.tech-domain-card:hover {
+    background: var(--white);
+    border-color: var(--green);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.tech-domain-card:hover .tech-icon {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.tech-icon i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.tech-domain-card h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+}
+
+/* ============================================
+   WHY L&D SECTION
+============================================ */
+.why-ld-section {
+    background: var(--light-gray);
+}
+
+.why-ld-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-ld-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--gold);
+    transition: var(--transition);
+}
+
+.why-ld-card:hover::before {
+    height: 100%;
+}
+
+.why-ld-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.why-ld-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gold);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.why-ld-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.why-ld-card p {
+    color: var(--dark-gray);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ============================================
+   L&D CTA SECTION
+============================================ */
+.ld-cta-section {
+    background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+}
+
+.cta-title-ld {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-text-ld {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.btn-cta-large {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid var(--gold);
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-cta-large:hover {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+============================================ */
+@media (max-width: 991px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .floating-stat-card {
+        bottom: 20px;
+        right: 20px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .floating-stat-card h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-header-section {
+        min-height: 40vh;
+        padding: 80px 0 40px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .service-offering-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cta-title-ld {
+        font-size: 1.5rem;
+    }
+    
+    .btn-cta-large {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+}
+/* ============================================
+   HR MANAGEMENT SPECIFIC STYLES
+============================================ */
+
+/* HR Value Boxes */
+.hr-value-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hr-value-item {
+    background: var(--light-gray);
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.hr-value-item:hover {
+    border-color: var(--green);
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+.hr-value-item i {
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.hr-value-item span {
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* HR Service Cards */
+.hr-service-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hr-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--green) 0%, var(--gold) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition);
+}
+
+.hr-service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.hr-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--green);
+}
+
+.hr-service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.hr-service-card:hover .hr-service-icon {
+    transform: rotateY(360deg);
+    background: var(--navy);
+}
+
+.hr-service-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.hr-service-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hr-service-text {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.hr-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hr-feature-list li {
+    padding: 0.5rem 0;
+    color: var(--black);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hr-feature-list i {
+    color: var(--green);
+    font-size: 0.85rem;
+}
+
+.service-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-badge.badge-new {
+    background: var(--green);
+    color: var(--white);
+}
+
+/* Process Step Cards */
+.process-step-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    position: relative;
+}
+
+.process-step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.process-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(195, 150, 53, 0.4);
+}
+
+.process-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1rem;
+}
+
+.process-icon i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.process-step-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.process-step-card p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* USP Cards */
+.usp-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.usp-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.usp-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.usp-card:hover .usp-icon-wrapper {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.usp-icon-wrapper i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.usp-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.usp-card p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Industry Badge */
+.industry-badge {
+    background: var(--light-gray);
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.industry-badge:hover {
+    background: var(--white);
+    border-color: var(--green);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.industry-badge i {
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.industry-badge:hover i {
+    color: var(--green);
+}
+
+.industry-badge span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+/* HR CTA Section */
+.hr-cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+}
+
+.cta-title-hr {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-text-hr {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hr-value-boxes {
+        gap: 0.75rem;
+    }
+    
+    .hr-value-item {
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .process-step-card {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hr-service-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cta-title-hr {
+        font-size: 1.5rem;
+    }
+    
+    .btn-cta-large {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .hr-value-boxes {
+        flex-direction: column;
+    }
+}
+/* ============================================
+   ENGINEERING SERVICES SPECIFIC STYLES
+============================================ */
+
+/* Engineering Highlights Grid */
+.eng-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.eng-highlight-item {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.eng-highlight-item:hover {
+    background: var(--white);
+    border-color: var(--navy);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.eng-highlight-item i {
+    font-size: 2rem;
+    color: var(--navy);
+}
+
+.eng-highlight-item h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+}
+
+.eng-highlight-item p {
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+/* Engineering Service Cards */
+.eng-service-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.eng-service-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.eng-service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.eng-service-card:hover .eng-service-icon {
+    background: var(--gold);
+    transform: rotate(360deg) scale(1.1);
+}
+
+.eng-service-icon i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.eng-service-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eng-service-card p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Capability Cards */
+.capability-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: var(--transition);
+    border-left: 5px solid var(--green);
+}
+
+.capability-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-left-color: var(--gold);
+}
+
+.capability-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.capability-header i {
+    font-size: 2.5rem;
+    color: var(--navy);
+}
+
+.capability-header h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+}
+
+.capability-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.capability-list li {
+    padding: 0.75rem 0;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+    padding-left: 25px;
+}
+
+.capability-list li:last-child {
+    border-bottom: none;
+}
+
+.capability-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 0.85rem;
+}
+
+/* Industry Engineering Cards */
+.industry-eng-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.industry-eng-card:hover {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-color: var(--gold);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.industry-eng-card i {
+    font-size: 3rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.industry-eng-card:hover i {
+    color: var(--white);
+}
+
+.industry-eng-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    transition: var(--transition);
+}
+
+.industry-eng-card:hover h5 {
+    color: var(--white);
+}
+
+/* Why Engineering Cards */
+.why-eng-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.why-eng-card:hover {
+    background: var(--white);
+    border-color: var(--green);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.why-eng-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.why-eng-card:hover .why-eng-icon {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.why-eng-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.why-eng-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.why-eng-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Engineering CTA Section */
+.eng-cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+}
+
+.cta-title-eng {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-text-eng {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .eng-highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .capability-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .eng-service-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .eng-service-card h4 {
+        font-size: 1rem;
+        min-height: auto;
+    }
+    
+    .cta-title-eng {
+        font-size: 1.5rem;
+    }
+    
+    .btn-cta-large {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .capability-card {
+        padding: 1.5rem;
+    }
+}
+/* ============================================
+   MANUFACTURING SERVICES SPECIFIC STYLES
+============================================ */
+
+/* Manufacturing Stats Grid */
+.mfg-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.mfg-stat-item {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.mfg-stat-item:hover {
+    background: var(--white);
+    border-color: var(--green);
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mfg-stat-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mfg-stat-icon i {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.mfg-stat-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 0.25rem 0;
+}
+
+.mfg-stat-content p {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+/* Manufacturing Capability Cards */
+.mfg-capability-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.mfg-capability-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mfg-cap-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.mfg-capability-card:hover .mfg-cap-icon {
+    background: var(--navy);
+    transform: rotate(360deg) scale(1.1);
+}
+
+.mfg-cap-icon i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.mfg-capability-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.mfg-capability-card p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Manufacturing Process Cards */
+.process-mfg-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    position: relative;
+    border-top: 4px solid var(--green);
+}
+
+.process-mfg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-top-color: var(--gold);
+}
+
+.process-mfg-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--navy);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(20, 55, 124, 0.4);
+}
+
+.process-mfg-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--light-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1rem;
+    transition: var(--transition);
+}
+
+.process-mfg-card:hover .process-mfg-icon {
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+}
+
+.process-mfg-icon i {
+    font-size: 28px;
+    color: var(--navy);
+    transition: var(--transition);
+}
+
+.process-mfg-card:hover .process-mfg-icon i {
+    color: var(--white);
+}
+
+.process-mfg-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.process-mfg-card p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Industry Manufacturing Cards */
+.industry-mfg-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.industry-mfg-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.industry-mfg-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.industry-mfg-card:hover .industry-mfg-icon {
+    background: var(--gold);
+    transform: scale(1.1) rotate(360deg);
+}
+
+.industry-mfg-icon i {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.industry-mfg-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.industry-mfg-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Quality Section */
+.quality-content h3 {
+    color: var(--navy);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.quality-list {
+    list-style: none;
+    padding: 0;
+}
+
+.quality-list li {
+    padding: 0.75rem 0;
+    color: var(--black);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quality-list i {
+    color: var(--green);
+    font-size: 1.1rem;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.cert-badge {
+    background: var(--light-gray);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.cert-badge:hover {
+    background: var(--white);
+    border-color: var(--gold);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cert-badge i {
+    font-size: 3rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.cert-badge:hover i {
+    color: var(--gold);
+}
+
+.cert-badge h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.cert-badge p {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+/* Why Manufacturing Cards */
+.why-mfg-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.why-mfg-card:hover {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.why-mfg-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.why-mfg-card:hover .why-mfg-icon {
+    background: var(--white);
+}
+
+.why-mfg-icon i {
+    font-size: 2rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.why-mfg-card:hover .why-mfg-icon i {
+    color: var(--navy);
+}
+
+.why-mfg-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.why-mfg-card:hover h4 {
+    color: var(--white);
+}
+
+.why-mfg-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin: 0;
+    transition: var(--transition);
+}
+
+.why-mfg-card:hover p {
+    color: var(--white);
+}
+
+/* Manufacturing CTA Section */
+.mfg-cta-section {
+    background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+}
+
+.cta-title-mfg {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-text-mfg {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .mfg-capability-card,
+    .process-mfg-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .cta-title-mfg {
+        font-size: 1.5rem;
+    }
+    
+    .btn-cta-large {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .industry-mfg-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* ============================================
+   CAREERS PAGE STYLING
+============================================ */
+
+:root {
+    --navy: #14377C;
+    --green: #188B73;
+    --gold: #C39635;
+    --light-gray: #F8F9FA;
+    --dark-gray: #6C757D;
+}
+
+/* Hero Section */
+.careers-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    padding: 80px 0 60px;
+    position: relative;
+}
+
+.careers-hero .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.careers-hero .hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Job Card */
+.job-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.job-badge-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.job-header {
+    margin-bottom: 1.5rem;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.job-meta-row {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
+.job-meta-row strong {
+    color: var(--navy);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.job-section {
+    margin-bottom: 1.5rem;
+}
+
+.job-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--gold);
+    padding-left: 0.75rem;
+}
+
+.job-description {
+    color: var(--dark-gray);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.job-list {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.job-list li {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.btn-apply {
+    flex: 1;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.btn-apply:hover {
+    background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+}
+
+.btn-details {
+    flex: 1;
+    border-color: var(--navy);
+    color: var(--navy);
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.btn-details:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: white;
+}
+
+.job-details-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--light-gray);
+}
+
+.job-additional-info h6 {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.job-additional-info ul {
+    padding-left: 1.5rem;
+}
+
+.job-additional-info li {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+/* Application Modal */
+.application-form .form-label {
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.application-form .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition: all 0.3s;
+}
+
+.application-form .form-control:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(24, 139, 115, 0.25);
+}
+
+/* Benefits Cards */
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s;
+}
+
+.benefit-card:hover .benefit-icon {
+    background: var(--gold);
+    transform: rotate(360deg);
+}
+
+.benefit-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.benefit-card h5 {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .careers-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .job-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .job-actions {
+        flex-direction: column;
+    }
+    
+    .btn-apply, .btn-details {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .careers-hero {
+        padding: 60px 0 40px;
+    }
+    
+    .careers-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .job-card {
+        padding: 1.5rem;
+    }
+    
+    .job-title {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,424 @@
+/* ============================================
+   CAREERS PAGE STYLES
+============================================ */
+
+:root {
+    --navy: #14377C;
+    --green: #188B73;
+    --gold: #C39635;
+    --light-gray: #F8F9FA;
+    --dark-gray: #6C757D;
+}
+
+/* Hero Section */
+.careers-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    padding: 80px 0 60px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.careers-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') no-repeat bottom;
+    opacity: 0.3;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+/* Job Cards */
+.job-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.job-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 1;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    padding-right: 80px;
+}
+
+.job-info-grid {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.job-info-item {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    align-items: baseline;
+}
+
+.job-info-item strong {
+    color: var(--navy);
+    min-width: 110px;
+    font-weight: 600;
+}
+
+.job-info-item span {
+    color: var(--dark-gray);
+}
+
+.job-section {
+    margin-bottom: 1.5rem;
+}
+
+.job-section h6 {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--gold);
+    padding-left: 0.75rem;
+    font-size: 1rem;
+}
+
+.job-section p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.job-section ul {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.job-section li {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.apply-btn {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.apply-btn:hover {
+    background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(20, 55, 124, 0.3);
+}
+
+/* Application Form */
+.application-form-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.application-form-card .form-label {
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.application-form-card .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+}
+
+.application-form-card .form-control:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(24, 139, 115, 0.25);
+}
+
+/* Benefits Section */
+.bg-gradient {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+    background: var(--gold);
+    transform: rotate(360deg);
+}
+
+.benefit-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.benefit-card h5 {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .job-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .careers-hero {
+        padding: 60px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .job-card {
+        padding: 1.5rem;
+    }
+    
+    .job-title {
+        font-size: 1.3rem;
+        padding-right: 60px;
+    }
+    
+    .job-badge {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+    
+    .application-form-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .job-info-item {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .job-info-item strong {
+        min-width: auto;
+    }
+}
+/* ============================================
+   APPLICATION MODAL STYLES
+============================================ */
+
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 1.5rem 2rem;
+    border: none;
+}
+
+.modal-header .modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.application-modal-form .form-label {
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.application-modal-form .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.application-modal-form .form-control:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.2rem rgba(24, 139, 115, 0.25);
+}
+
+.modal-footer-custom {
+    border-top: 2px solid var(--light-gray);
+    padding-top: 1.5rem;
+}
+
+.btn-apply-submit {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-apply-submit:hover {
+    background: linear-gradient(135deg, var(--green) 0%, var(--navy) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(20, 55, 124, 0.3);
+    color: white;
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .modal-header {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .modal-header .modal-title {
+        font-size: 1.25rem;
+    }
+}
